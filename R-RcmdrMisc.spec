@@ -4,7 +4,7 @@
 #
 Name     : R-RcmdrMisc
 Version  : 1.0.10
-Release  : 1
+Release  : 2
 URL      : https://cran.r-project.org/src/contrib/RcmdrMisc_1.0-10.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/RcmdrMisc_1.0-10.tar.gz
 Summary  : R Commander Miscellaneous Functions
@@ -39,11 +39,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1530416937
+export SOURCE_DATE_EPOCH=1530417580
 
 %install
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1530416937
+export SOURCE_DATE_EPOCH=1530417580
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
