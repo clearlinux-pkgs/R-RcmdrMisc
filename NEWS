@@ -1,0 +1,83 @@
+Changes to Version 1.0-10
+
+  o Make indexplot() compatible with car 3.0-0.
+
+Changes to Version 1.0-9
+
+  o Fixed bug in discretePlot() (reported by Felipe Rafael Ribeiro Melo).
+
+Changes to Version 1.0-8
+
+  o readSPSS() now can process value labels when haven::read_SPSS() is called; new use.value.labels argument, defaults to TRUE (after report by Manuel Munoz Marquez).
+
+Changes to Version 1.0-7
+
+  o No longer import print.rcorr from Hmisc.
+
+Changes to Version 1.0-6
+
+  o Added readSAS() for SAS b7dat files.
+  
+  o Added readStata() for improved input of Stata .dta files.
+  
+  o Added readSPSS() for reading SPSS .sav and .por files.
+  
+  o Improvements to plotMeans() legends.
+  
+  o Barplot() can now compute conditional percentages (suggestion of Beatriz Lacruz); other improvements.
+  
+  o Hist() now invisibly returns a "hist" object or list of "hist" objects (suggestion of Beatriz Lacruz).
+  
+  o renamed bin.var() as binVariable(), retaining bin.var() as a synomym.
+  
+  o Added discretePlot() for plotting distributions of discrete numeric variables (after a suggestion of Beatriz Lacruz).
+  
+  o Added plotBoot() for plotting bootstrap distributions.
+  
+  o indexplot() can now plot multiple variables (suggestion of Manuel Munoz).
+  
+  o Added binnedCounts() for binned frequency distribution of a numeric variable (suggestion of Manuel Munoz).
+  
+  o Added normalityTests() for various tests of normality.
+  
+  o Small bug fixes.
+
+Changes to Version 1.0-5
+
+  o Added connect argument to plotMeans() (suggestion of Graham Smith).
+  
+  o Added capability to plot regions under density functions to plotDistr().
+  
+  o Added *gumbel() functions for the Gumbel distribution, parametrized by location and scale.
+
+Changes to Version 1.0-4
+
+  o Added ... argument to Barplot (after Rcmdr bug reported by Fritz Leisch).
+  
+  o Added DeltaMethod().
+
+Changes to Version 1.0-3
+
+  o Fixed bug in rcorr.adjust() that didn't properly convert .000 to <.001 for pairwise-complete
+correlations (reported by Bob Muenchen).
+
+  o Added Barplot() and Dotplot().
+  
+  o Added readXL(), export excel_sheets(), both from readxl package.
+  
+  o Conform to new CRAN package import requirements.
+
+Changes to Version 1.0-2
+
+  o Updated the following inadvertently reverted functions (and docs): partial.cor(), numSummary(), Hist(), rcorr.adjust() (following bug report by Mark Dunning).
+
+  o Hist() reports a warning but doesn't fail for empty groups.
+
+Changes to Version 1.0-1
+
+  o Added "se(mean)" to numSummary().
+
+Changes to Version 1.0-0
+
+  o First version of the package, with functions moved from the Rcmdr package to make them more conveniently available to other CRAN packages (at the suggestion of Liviu Andronic).
+
