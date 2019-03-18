@@ -4,26 +4,53 @@
 #
 Name     : R-RcmdrMisc
 Version  : 2.5.1
-Release  : 10
+Release  : 11
 URL      : https://cran.r-project.org/src/contrib/RcmdrMisc_2.5-1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/RcmdrMisc_2.5-1.tar.gz
 Summary  : R Commander Miscellaneous Functions
 Group    : Development/Tools
 License  : GPL-2.0+
-Requires: R-Hmisc
-Requires: R-car
-Requires: R-e1071
-Requires: R-nortest
-Requires: R-readstata13
-Requires: R-readxl
-Requires: R-sandwich
+Requires: R-stringi
+BuildRequires : R-Formula
 BuildRequires : R-Hmisc
+BuildRequires : R-RColorBrewer
+BuildRequires : R-abind
+BuildRequires : R-acepack
+BuildRequires : R-backports
+BuildRequires : R-base64enc
 BuildRequires : R-car
+BuildRequires : R-carData
+BuildRequires : R-cellranger
+BuildRequires : R-checkmate
+BuildRequires : R-colorspace
 BuildRequires : R-e1071
+BuildRequires : R-forcats
+BuildRequires : R-ggplot2
+BuildRequires : R-gridExtra
+BuildRequires : R-gtable
+BuildRequires : R-haven
+BuildRequires : R-hms
+BuildRequires : R-htmlTable
+BuildRequires : R-htmltools
+BuildRequires : R-htmlwidgets
+BuildRequires : R-latticeExtra
+BuildRequires : R-lazyeval
+BuildRequires : R-munsell
 BuildRequires : R-nortest
+BuildRequires : R-pillar
+BuildRequires : R-pkgconfig
+BuildRequires : R-plyr
 BuildRequires : R-readstata13
 BuildRequires : R-readxl
+BuildRequires : R-rio
+BuildRequires : R-rlang
+BuildRequires : R-rstudioapi
 BuildRequires : R-sandwich
+BuildRequires : R-scales
+BuildRequires : R-stringi
+BuildRequires : R-xfun
+BuildRequires : R-zip
+BuildRequires : R-zoo
 BuildRequires : buildreq-R
 
 %description
@@ -37,11 +64,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1536634415
+export SOURCE_DATE_EPOCH=1552943448
 
 %install
+export SOURCE_DATE_EPOCH=1552943448
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1536634415
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -76,8 +103,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library RcmdrMisc|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  RcmdrMisc || :
 
 
 %files
