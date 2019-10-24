@@ -4,7 +4,7 @@
 #
 Name     : R-RcmdrMisc
 Version  : 2.5.1
-Release  : 16
+Release  : 17
 URL      : https://cran.r-project.org/src/contrib/RcmdrMisc_2.5-1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/RcmdrMisc_2.5-1.tar.gz
 Summary  : R Commander Miscellaneous Functions
@@ -31,6 +31,7 @@ BuildRequires : R-readstata13
 BuildRequires : R-readxl
 BuildRequires : R-sandwich
 BuildRequires : buildreq-R
+BuildRequires : util-linux
 
 %description
 Various statistical, graphics, and data-management functions used by the Rcmdr package in the R Commander GUI for R.
@@ -43,10 +44,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1563574739
+export SOURCE_DATE_EPOCH=1571884676
 
 %install
-export SOURCE_DATE_EPOCH=1563574739
+export SOURCE_DATE_EPOCH=1571884676
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
