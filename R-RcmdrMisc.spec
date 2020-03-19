@@ -4,7 +4,7 @@
 #
 Name     : R-RcmdrMisc
 Version  : 2.7.0
-Release  : 21
+Release  : 22
 URL      : https://cran.r-project.org/src/contrib/RcmdrMisc_2.7-0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/RcmdrMisc_2.7-0.tar.gz
 Summary  : R Commander Miscellaneous Functions
