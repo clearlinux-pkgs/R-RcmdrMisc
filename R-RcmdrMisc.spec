@@ -4,10 +4,10 @@
 # Using build pattern: R
 #
 Name     : R-RcmdrMisc
-Version  : 2.9.0
-Release  : 47
-URL      : https://cran.r-project.org/src/contrib/RcmdrMisc_2.9-0.tar.gz
-Source0  : https://cran.r-project.org/src/contrib/RcmdrMisc_2.9-0.tar.gz
+Version  : 2.9.1
+Release  : 48
+URL      : https://cran.r-project.org/src/contrib/RcmdrMisc_2.9-1.tar.gz
+Source0  : https://cran.r-project.org/src/contrib/RcmdrMisc_2.9-1.tar.gz
 Summary  : R Commander Miscellaneous Functions
 Group    : Development/Tools
 License  : GPL-2.0+
@@ -50,10 +50,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1692895911
+export SOURCE_DATE_EPOCH=1695828500
 
 %install
-export SOURCE_DATE_EPOCH=1692895911
+export SOURCE_DATE_EPOCH=1695828500
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
